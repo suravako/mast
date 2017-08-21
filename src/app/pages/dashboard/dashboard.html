@@ -1,0 +1,24 @@
+<div class="form-horizontal"  ng-controller="DashboardCtrl">
+    <div class="form-group"> 
+        <label for="inputid3" class="col-sm-1 control-label">Product:</label>
+        <div class="col-sm-2">
+            <select ng-model="selectedProduct" class="form-control" title="Select Product" data-style="btn-primary" ng-change="getRelease()" >    
+                <option value="">Select Product</option>
+                <option ng-repeat="r in products" ng-value="r">{{ r}}</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-group"> 
+        <label for="inputid3" class="col-sm-1 control-label">Release:</label>
+        <div class="col-sm-2">
+            <select ng-model="selectedRelease" class="form-control" title="Select Release" data-style="btn-primary" ng-change="setSelectedOption()">    
+                <option value="">Select Release</option>
+                <option ng-repeat="r in releases" ng-value="r">{{ r}}</option>
+            </select>        
+        </div>
+    </div>
+
+    <div class="col-md-1"> Select Release:
+        {{selectedProductAndRelease}}
+    </div>
+</div>

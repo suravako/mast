@@ -1,0 +1,14 @@
+<div class="page-top clearfix" scroll-position="scrolled" max-height="50" ng-class="{'scrolled': scrolled}">
+    <a href="#/dashboard" class="al-logo clearfix"><span>MAST</span></a>
+    <a href class="collapse-menu-link ion-navicon" ba-sidebar-toggle-menu></a>
+    <div class="user-profile clearfix">
+        <div class="al-user-profile" uib-dropdown>
+
+
+            <div ng-controller='PageTopCtrl'>
+                {{username}} &nbsp;&nbsp;&nbsp; <a ng-href='https://login.oracle.com/pls/orasso/orasso.wwsso_app_admin.ls_logout'>Logout</a>
+            </div>
+        </div>    
+
+    </div>
+</div>
